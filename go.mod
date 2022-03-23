@@ -1,6 +1,7 @@
 module ginDemo
 
 go 1.15
+<<<<<<< HEAD
 
 require (
 	github.com/gin-gonic/gin v1.7.7 // indirect
@@ -16,3 +17,5 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
+=======
+>>>>>>> 80ce1f4738445c5633e0b17b202efa4c5c1da361

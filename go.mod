@@ -1,10 +1,9 @@
 module ginDemo
 
 go 1.15
-<<<<<<< HEAD
 
 require (
-	github.com/gin-gonic/gin v1.7.7 // indirect
+	github.com/gin-gonic/gin v1.7.7
 	github.com/go-playground/validator/v10 v10.10.1 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -17,5 +16,3 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-=======
->>>>>>> 80ce1f4738445c5633e0b17b202efa4c5c1da361

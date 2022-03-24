@@ -1,25 +1,17 @@
 package main
 
 import (
+	"ginDemo/backend/router"
+	"ginDemo/backend/sqlserv"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func main() {
 	r := gin.Default()
-	r.POST("/test", func(ctx *gin.Context) {
-		ctx.JSON(http.StatusOK, gin.H{
-			"code": 200,
-			"msg":  "post访问成功",
-		})
-	})
+	sqlserv.Init()
 
-	r.GET("/toget", func(ctx *gin.Context) {
-		ctx.JSON(http.StatusOK, gin.H{
-			"code": "200",
-			"msg":  "get访问成功",
-		})
-	})
+	router.Login(r)
+	router.GetMessage(r)
 
 	r.Run()
 }
